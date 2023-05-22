@@ -14,7 +14,7 @@ jeu de données : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projec
 
 ## Content:
 
-#### I –  analyse exploratoire.
+#### I –  exploratory analysis.
 ##### 1 - Analyse
 ###### Removing columns with 80% null values, lines corresponding to residential buildings, Values below zero for the variables coresponding to the emissions, Values less than or equal to zero for targets.
 ###### Imputation of values for the ENERGYSTARscore feature by the median for each building category.
@@ -27,14 +27,28 @@ jeu de données : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projec
 ###### Switch targets to logarithmic (distribution) scale.
 ###### Hot encoding for BuildingType, PrimaryPropertyType, Neighborhood, LargestPropertyUseType.
 
-#### II – Choix du modèles de machine learning.
+#### II – Choice of machine learning models.
 
-##### 1 - Prédiction pour la target SiteEnergyUse(kBtu) avec ENERGYSTARscore.
+##### 1 - Prediction for SiteEnergyUse(kBtu) target with ENERGYSTARscore.
 ###### Cross validation with metric MSE, MAE, R2 on models : DummyRegressor, LinearRegression, Ridge, Lasso, RandomForestRegressor, GradientBoostingRegressor.
 ###### By optimizing with gridsearch the two best performing models selected: RandomForestRegressor, GradientBoostingRegressor.
-###### we can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
+###### We can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
 
-###### 2 – Prédiction pour la target SiteEnergyUse(kBtu) sans ENERGYSTARscore. 
+##### 2 – Prediction for SiteEnergyUse(kBtu) target without ENERGYSTARscore. 
+###### Cross validation with metric MSE, MAE, R2 on models : DummyRegressor, LinearRegression, Ridge, Lasso, RandomForestRegressor, GradientBoostingRegressor.
+###### By optimizing with gridsearch the two best performing models selected: RandomForestRegressor, GradientBoostingRegressor.
+###### We can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
+###### We can conclude that the ENERGYSTARscore variable has an impact on the prediction performance with a score of 0.81 with and 0.76 without.
 
-###### 3 –  Prédiction pour la target TotalGHGEmissions avec ENERGYSTARscore.
-###### 4  – Prédiction pour la target TotalGHGEmissions sans ENERGYSTARscore. 
+
+
+##### 3 –  Prediction for the TotalGHGEmissions target with ENERGYSTARscore.
+###### Cross validation with metric MSE, MAE, R2 on models : DummyRegressor, LinearRegression, Ridge, Lasso, RandomForestRegressor, GradientBoostingRegressor.
+###### By optimizing with gridsearch the two best performing models selected: RandomForestRegressor, GradientBoostingRegressor.
+###### We can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
+
+##### 4  – Prediction for TotalGHGEmissions target without ENERGYSTARscore.
+###### Cross validation with metric MSE, MAE, R2 on models : DummyRegressor, LinearRegression, Ridge, Lasso, RandomForestRegressor, GradientBoostingRegressor.
+###### By optimizing with gridsearch the two best performing models selected: RandomForestRegressor, GradientBoostingRegressor.
+###### We can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
+###### we can conclude that the ENERGYSTARscore variable has an impact on the prediction performance with a score of 0,76 with and 0.67 without.
