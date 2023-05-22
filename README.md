@@ -51,4 +51,4 @@ jeu de données : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projec
 ###### Cross validation with metric MSE, MAE, R2 on models : DummyRegressor, LinearRegression, Ridge, Lasso, RandomForestRegressor, GradientBoostingRegressor.
 ###### By optimizing with gridsearch the two best performing models selected: RandomForestRegressor, GradientBoostingRegressor.
 ###### We can conclude that the best model is GradientBoostingRegressor with parameters max_depth=80, random_state=42, subsample=0.5.
-###### we can conclude that the ENERGYSTARscore variable has an impact on the prediction performance with a score of 0,76 with and 0.67 without.
+###### We can conclude that the ENERGYSTARscore variable has an impact on the prediction performance with a score of 0,76 with and 0.67 without.
