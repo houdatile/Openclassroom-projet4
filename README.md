@@ -16,7 +16,9 @@ jeu de données : https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projec
 
 #### I –  analyse exploratoire.
 ###### 1 - Analyse
+
 ###### 2 - Features engineering
+
 #### II – Choix du modèles de machine learning.
 ###### 1 - Introduction
 
