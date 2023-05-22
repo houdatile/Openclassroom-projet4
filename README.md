@@ -2,9 +2,9 @@
 
 ## Description : 
 
-The “Santé publique France” agency has launched a call for projects to find innovative ideas for food-related applications. You want to participate and propose an idea for an application.
-I decided to create an application that calculates the sugar level of different products for diabetics.
-This second notebook will explore the data.
+I work in the city of Seattle. To achieve its goal of a carbon-neutral city by 2050, my team is taking a close look at the consumption and emissions of non-residential buildings.
+
+With the data provided, I want to attempt to predict the CO2 emissions and total energy consumption of non-residential buildings for which they have not yet been measured.
 
 ## Environnement :
 
